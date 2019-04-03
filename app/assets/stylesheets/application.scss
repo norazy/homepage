@@ -25,58 +25,223 @@ body {
         margin: 0;
         padding: 0;
     }
+    // ヘッダー↓
     header {
         margin: 0;
         padding: 0;
         width: 100%;
         box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+        .header_back_color {
+            border: solid 1px #c97e83;
+            background-color: #c97e83;
+            height: 152px;
+            box-sizing: border-box;
+            .mediataiou{
+                width: 318px;
+                margin-left: auto;
+                margin-right: auto;
+                // display: flex;
+                .header_logo {
+                    box-sizing: border-box;
+                    width: 50%;
+                    .logo {
+                        width: 155px;
+                        text-align: center;
+                        .logo1{
+                            margin-top: 5px;
+                            font-size: 12px;
+                            color: #49352a;
+                        }
+                        .logo2 a{
+                            color: #ffffff;
+                            font-size: 32px;
+                            text-decoration: none;
+                            line-height: 1.1; 
+                        }
+                        .logo3 {
+                            padding-top: 1px;
+                            span {
+                                color: #ffffff;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                .clearfix:after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+                .header_right{
+                    width: 90%;
+                    height: 82%;
+                    box-sizing: border-box;
+                    float: right;
+                    // margin-top: 20px;
+                    .gengo {
+                        float: right;
+                        width: 20%;
+                        height: 100%;
+                        box-sizing: border-box;
+                        // margin-top: 12px;
+                        .gengo2 {
+                            height: 50%;
+                            padding-top: 6px;
+                            // padding-bottom: 0px;
+                            text-align: center;
+                            box-sizing: border-box;
+                            padding-right: 5px;
+                            a{
+                                color: #ffffff;
+                                text-decoration: none;
+                            }
+                            .gengo22 {
+                                border: solid 2px #ffffff;
+                                border-radius: 4px;
+                                background-color: #5e3f32;
+                                box-shadow: 1px 1px gray;
+                                a {
+                                    font-size: 13px;
+                                }
+                                span {
+                                    display: inline-block;
+                                    text-indent: -9999px;
+                                }
+                            }
+                            .gengo22:hover{
+                                cursor: pointer;
+                                background-color: #49352a;
+                                border: solid 2px #49352a;
+                            }
+                        }
+                    }
+                    .annai {
+                        float: right;
+                        width: 80%;
+                        height: 100%;
+                        box-sizing: border-box;
+                        margin-top: 6px;
+                    
+                        .annai2 {
+                            width: 32%;
+                            float: left;
+                            box-sizing: border-box;
+                            padding-left: 8px;
+    
+                            .annai3 {
+                                padding: 6px;
+                                border-radius: 6px;
+                                background-color: #ffffff;
+                                box-shadow: 1px 1px gray;
+                                position: relative;
+                                margin-left: 2px;
+                                a {
+                                    position: absolute;
+                                    top: 0;
+                                    bottom: 0;
+                                    left: 0;
+                                    right: 0;
+                                    margin-left: 0;        
+                                }
+                                span {
+                                    display: block;
+                                    color: #000000;
+                                    text-decoration: none;
+                                    text-align: center;
+                                    font-size: 15px;        
+                                }
+                            }
+                            .annai3:hover {
+                                background-color:  #942a2a;
+                               span {
+                                    color: white;
+                                }
+                            }
+                            .nyukai {
+                                background-color: #942a2a;
+                                border: solid 2px #ffffff;
+                                padding: 4px;
+                                
+                                span {
+                                    color: #ffffff;
+                                }
+                            }
+                            .nyukai:hover {
+                                background-color: #ffffff;
+                                
+                                span {
+                                    color: #000000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     
+    // フッダー
     footer {
-        height: 120px;
+        height: 130px;
         background-color: #cccccc;
         width: 100%;
-    }
-    
-    .fjoudan {
-        position: relative;
-        height: 90px;
-        box-sizing: border-box;
-    }
-
-    // ヘッダー↓
-    .header_back_color {
-        border: solid 1px #c97e83;
-        background-color: #c97e83;
-        height: 152px;
-        box-sizing: border-box;
-        .mediataiou{
+        .mediataiou2 {
             width: 318px;
             margin-left: auto;
             margin-right: auto;
-            // display: flex;
-            .header_logo {
+            .footer_nav {
+                height: 102px;
                 box-sizing: border-box;
-                width: 50%;
-                .logo {
-                    width: 155px;
-                    text-align: center;
-                    .logo1{
-                        margin-top: 5px;
-                        font-size: 12px;
-                        color: #49352a;
+                .links {
+                    width: 32%;
+                    float: left;
+                    ul {
+                        margin: 0;
+                        padding-top: 18px;
+                        list-style: none;
+                        li {
+                            width: auto;
+                            border-left: solid 1px #696969;
+                            a {
+                                display: block;
+                                padding-left: 12px;
+                                color: #000000;
+                                font-size: 13px;
+                                text-decoration: none;
+                            }
+                            a:hover {
+                                background-color: #c97e83;
+                                color: #ffffff;
+                            }
+                        }
                     }
-                    .logo2 a{
-                        color: #ffffff;
-                        font-size: 32px;
-                        text-decoration: none;
-                        line-height: 1.1; 
-                    }
-                    .logo3 {
-                        padding-top: 1px;
-                        span {
-                            color: #ffffff;
-                            font-size: 12px;
+                }
+                .sns{
+                    float: right;
+                    display: flex;
+                    margin-top: 22px;
+                    .sns2{
+                        margin-right: 12px;
+                        width: 50px;
+                        height: 50px;
+                        background-color: #ffffff;
+                        border-radius: 8px;
+                        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+                        .instagram a img{
+                            width: 49px;
+                            height: 49px;
+                        }
+                        .twitter a img {
+                            width: 50px;
+                            height: 50px;
+                        }
+                        .weibo {
+                            text-align: center;
+                            margin-top: 5px;
+                            a img {
+                                width: 37px;
+                                height: 39px;
+                            }
                         }
                     }
                 }
@@ -86,110 +251,11 @@ body {
                 display: block;
                 clear: both;
             }
-            .header_right{
-                width: 90%;
-                height: 82%;
-                box-sizing: border-box;
-                float: right;
-                // margin-top: 20px;
-                .gengo {
-                    float: right;
-                    width: 20%;
-                    height: 100%;
-                    box-sizing: border-box;
-                    // margin-top: 12px;
-                    .gengo2 {
-                        height: 50%;
-                        padding-top: 6px;
-                        // padding-bottom: 0px;
-                        text-align: center;
-                        box-sizing: border-box;
-                        padding-right: 5px;
-                        a{
-                            color: #ffffff;
-                            text-decoration: none;
-                        }
-                        .gengo22 {
-                            border: solid 2px #ffffff;
-                            border-radius: 4px;
-                            background-color: #5e3f32;
-                            box-shadow: 1px 1px gray;
-                            a {
-                                font-size: 13px;
-                            }
-                            span {
-                                display: inline-block;
-                                text-indent: -9999px;
-                            }
-                        }
-                        .gengo22:hover{
-                            cursor: pointer;
-                            background-color: #49352a;
-                            border: solid 2px #49352a;
-                        }
-                    }
-                }
-                .annai {
-                    float: right;
-                    width: 80%;
-                    height: 100%;
-                    box-sizing: border-box;
-                    margin-top: 6px;
-                
-                    .annai2 {
-                        width: 32%;
-                        float: left;
-                        box-sizing: border-box;
-                        padding-left: 8px;
-
-                        .annai3 {
-                            padding: 6px;
-                            border-radius: 6px;
-                            background-color: #ffffff;
-                            box-shadow: 1px 1px gray;
-                            position: relative;
-                            margin-left: 2px;
-                            a {
-                                position: absolute;
-                                top: 0;
-                                bottom: 0;
-                                left: 0;
-                                right: 0;
-                                margin-left: 0;        
-                            }
-                            span {
-                                display: block;
-                                color: #000000;
-                                text-decoration: none;
-                                text-align: center;
-                                font-size: 15px;        
-                            }
-                        }
-                        .annai3:hover {
-                            background-color:  #942a2a;
-                           span {
-                                color: white;
-                            }
-                        }
-                        .nyukai {
-                            background-color: #942a2a;
-                            border: solid 2px #ffffff;
-                            padding: 4px;
-                            
-                            span {
-                                color: #ffffff;
-                            }
-                        }
-                        .nyukai:hover {
-                            background-color: #ffffff;
-                            
-                            span {
-                                color: #000000;
-                            }
-                        }
-                    }
-                }
-            }
+        }
+        .copyright {
+            height: 20px;
+            box-sizing: border-box;
+            text-align: center;
         }
     }
     
@@ -200,63 +266,224 @@ body {
         margin: 0;
         padding: 0;
     }
-    
+
+    // ヘッダー↓
     header {
         margin: 0;
         padding: 0;
-        // position: fixed;
         width: 100%;
-        // z-index: 2;
         box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
-    }
+        .header_back_color {
+            border: solid 1px #c97e83;
+            background-color: #c97e83;
+            height: 110px;
+            box-sizing: border-box;
+            .mediataiou{
+                width: 407px;
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                .header_logo {
+                    box-sizing: border-box;
+                    width: 40%;
+                    .logo {
+                        width: 155px;
+                        text-align: center;
+                        .logo1{
+                            margin-top: 10px;
+                            font-size: 14px;
+                            color: #49352a;
+                        }
+                        .logo2 a{
+                            color: #ffffff;
+                            font-size: 34px;
+                            text-decoration: none;
+                            line-height: 1.3; 
+                        }
+                        .logo3 {
+                            padding-top: 1px;
+                            span {
+                                color: #ffffff;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+                .clearfix:after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+                .header_right{
+                    width: 60%;
+                    height: 82%;
+                    box-sizing: border-box;
+                    margin-top: 20px;
+                    .gengo {
+                        float: right;
+                        width: 20%;
+                        height: 100%;
+                        box-sizing: border-box;
+                        margin-top: 12px;
+                        .gengo2 {
+                            height: 50%;
+                            padding-top: 6px;
+                            // padding-bottom: 0px;
+                            text-align: center;
+                            box-sizing: border-box;
+                            padding-right: 5px;
+                            a{
+                                color: #ffffff;
+                                text-decoration: none;
+                            }
+                            .gengo22 {
+                                border: solid 2px #ffffff;
+                                border-radius: 4px;
+                                background-color: #5e3f32;
+                                box-shadow: 1px 1px gray;
+                                a {
+                                    font-size: 13px;
+                                }
+                                span {
+                                    display: inline-block;
+                                    text-indent: -9999px;
+                                }
+                            }
+                            .gengo22:hover{
+                                cursor: pointer;
+                                background-color: #49352a;
+                                border: solid 2px #49352a;
+                            }
+                        }
+                    }
+                    .annai {
+                        float: right;
+                        width: 80%;
+                        height: 100%;
+                        box-sizing: border-box;
+                        margin-top: 18px;
+                    
+                        .annai2 {
+                            width: 32%;
+                            float: left;
+                            box-sizing: border-box;
+                            padding-left: 8px;
     
-    footer {
-        height: 120px;
-        background-color: #cccccc;
-        width: 100%;
-    }
-    
-    .fjoudan {
-        position: relative;
-        height: 90px;
-        box-sizing: border-box;
+                            .annai3 {
+                                padding: 6px;
+                                border-radius: 6px;
+                                background-color: #ffffff;
+                                box-shadow: 1px 1px gray;
+                                position: relative;
+                                margin-left: 2px;
+                                a {
+                                    position: absolute;
+                                    top: 0;
+                                    bottom: 0;
+                                    left: 0;
+                                    right: 0;
+                                    margin-left: 0;        
+                                }
+                                span {
+                                    display: block;
+                                    color: #000000;
+                                    text-decoration: none;
+                                    text-align: center;
+                                    font-size: 15px;        
+                                }
+                            }
+                            .annai3:hover {
+                                background-color:  #942a2a;
+                               span {
+                                    color: white;
+                                }
+                            }
+                            .nyukai {
+                                background-color: #942a2a;
+                                border: solid 2px #ffffff;
+                                padding: 4px;
+                                
+                                span {
+                                    color: #ffffff;
+                                }
+                            }
+                            .nyukai:hover {
+                                background-color: #ffffff;
+                                
+                                span {
+                                    color: #000000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
-    // ヘッダー↓
-    .header_back_color {
-        border: solid 1px #c97e83;
-        background-color: #c97e83;
-        height: 110px;
-        // height: 157px;
-        box-sizing: border-box;
-        .mediataiou{
-            // position: relative;
+    // フッダー
+    footer {
+        height: 130px;
+        background-color: #cccccc;
+        width: 100%;
+        .mediataiou2 {
             width: 407px;
             margin-left: auto;
             margin-right: auto;
-            display: flex;
-            .header_logo {
+            .footer_nav {
+                height: 102px;
                 box-sizing: border-box;
-                width: 40%;
-                .logo {
-                    width: 155px;
-                    text-align: center;
-                    .logo1{
-                        margin-top: 10px;
-                        font-size: 14px;
-                        color: #49352a;
+                .links {
+                    width: 30%;
+                    float: left;
+                    ul {
+                        margin: 0;
+                        padding-top: 18px;
+                        list-style: none;
+                        padding-left: 15px;
+                        li {
+                            width: auto;
+                            border-left: solid 1px #696969;
+                            a {
+                                display: block;
+                                padding-left: 12px;
+                                color: #000000;
+                                font-size: 14px;
+                                text-decoration: none;
+                            }
+                            a:hover {
+                                background-color: #c97e83;
+                                color: #ffffff;
+                            }
+                        }
                     }
-                    .logo2 a{
-                        color: #ffffff;
-                        font-size: 34px;
-                        text-decoration: none;
-                        line-height: 1.3; 
-                    }
-                    .logo3 {
-                        padding-top: 1px;
-                        span {
-                            color: #ffffff;
-                            font-size: 13px;
+                }
+                .sns{
+                    float: right;
+                    display: flex;
+                    margin-top: 24px;
+                    .sns2{
+                        margin-right: 24px;
+                        width: 50px;
+                        height: 50px;
+                        background-color: #ffffff;
+                        border-radius: 8px;
+                        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+                        .instagram a img{
+                            width: 49px;
+                            height: 49px;
+                        }
+                        .twitter a img {
+                            width: 50px;
+                            height: 50px;
+                        }
+                        .weibo {
+                            text-align: center;
+                            margin-top: 5px;
+                            a img {
+                                width: 37px;
+                                height: 39px;
+                            }
                         }
                     }
                 }
@@ -266,187 +493,13 @@ body {
                 display: block;
                 clear: both;
             }
-            .header_right{
-                width: 60%;
-                height: 82%;
-                box-sizing: border-box;
-                margin-top: 20px;
-                .gengo {
-                    float: right;
-                    width: 20%;
-                    height: 100%;
-                    box-sizing: border-box;
-                    margin-top: 12px;
-                    .gengo2 {
-                        height: 50%;
-                        padding-top: 6px;
-                        // padding-bottom: 0px;
-                        text-align: center;
-                        box-sizing: border-box;
-                        padding-right: 5px;
-                        a{
-                            color: #ffffff;
-                            text-decoration: none;
-                        }
-                        .gengo22 {
-                            border: solid 2px #ffffff;
-                            border-radius: 4px;
-                            background-color: #5e3f32;
-                            box-shadow: 1px 1px gray;
-                            a {
-                                font-size: 13px;
-                            }
-                            span {
-                                display: inline-block;
-                                text-indent: -9999px;
-                            }
-                        }
-                        .gengo22:hover{
-                            cursor: pointer;
-                            background-color: #49352a;
-                            border: solid 2px #49352a;
-                        }
-                    }
-                }
-                .annai {
-                    float: right;
-                    width: 80%;
-                    height: 100%;
-                    box-sizing: border-box;
-                    margin-top: 18px;
-                
-                    .annai2 {
-                        width: 32%;
-                        float: left;
-                        box-sizing: border-box;
-                        padding-left: 8px;
-
-                        .annai3 {
-                            padding: 6px;
-                            border-radius: 6px;
-                            background-color: #ffffff;
-                            box-shadow: 1px 1px gray;
-                            position: relative;
-                            margin-left: 2px;
-                            a {
-                                position: absolute;
-                                top: 0;
-                                bottom: 0;
-                                left: 0;
-                                right: 0;
-                                margin-left: 0;        
-                            }
-                            span {
-                                display: block;
-                                color: #000000;
-                                text-decoration: none;
-                                text-align: center;
-                                font-size: 15px;        
-                            }
-                        }
-                        .annai3:hover {
-                            background-color:  #942a2a;
-                           span {
-                                color: white;
-                            }
-                        }
-                        .nyukai {
-                            background-color: #942a2a;
-                            border: solid 2px #ffffff;
-                            padding: 4px;
-                            
-                            span {
-                                color: #ffffff;
-                            }
-                        }
-                        .nyukai:hover {
-                            background-color: #ffffff;
-                            
-                            span {
-                                color: #000000;
-                            }
-                        }
-                    }
-                }
-            }
+        }
+        .copyright {
+            height: 20px;
+            box-sizing: border-box;
+            text-align: center;
         }
     }
-    .links {
-        width: 50%;
-    }
-    
-    .links ul {
-        margin: 0;
-        padding: 18px 50px 13px 12px;
-        list-style: none;
-    }
-    
-    .links ul:after {
-        content: "";
-        display: block;
-        clear: both;
-    }
-    
-    .links li {
-        float: left;
-        width: auto;
-        border-right: solid 1px #696969;
-    }
-    
-    .links li a {
-        display: block;
-        padding: 0 13px;
-        color: #000000;
-        font-size: 14px;
-        text-decoration: none;
-    }
-    
-    .links li a:hover {
-        background-color: #c97e83;
-        color: #ffffff;
-    }
-    
-    .sns{
-        position: absolute;
-        top: 15px;
-        right: 5px;       
-    }
-    
-    .sns2{
-        margin: 0 10px;
-        width: 50px;
-        height: 50px;
-        background-color: #ffffff;
-        float: right;
-        border-radius: 8px;
-        box-shadow: 1px 1px gray;
-    }
-    
-    .instagram a img {
-        width: 49px;
-        height: 49px;
-    }
-    
-    .twitter a img {
-        width: 50px;
-        height: 50px;
-    }
-    
-    .weibo {
-        padding: 3px;
-    }
-    
-    .weibo a img {
-        width: 44px;
-        height: 44px;
-    }
-    
-    .copyright {
-        height: 20px;
-        box-sizing: border-box;
-        text-align: center;
-    }
-    
 }
 
 @media (min-width: 600px) and (max-width: 767px) {
@@ -462,51 +515,220 @@ body {
         width: 100%;
         z-index: 2;
         box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
-    }
+        // ヘッダー↓
+        .header_back_color {
+            border: solid 1px #c97e83;
+            background-color: #c97e83;
+            height: 120px;
+            box-sizing: border-box;
+            .mediataiou{
+                position: relative;
+                width: 592px;
+                margin-left: auto;
+                margin-right: auto;
+                .header_logo {
+                    box-sizing: border-box;
+                    width: 50%;
+                    .logo {
+                        width: 225px;
+                        text-align: center;
+                        .logo1{
+                            margin-top: 15px;
+                            font-size: 14px;
+                            color: #49352a;
+                        }
+                        .logo2 a{
+                            color: #ffffff;
+                            font-size: 36px;
+                            text-decoration: none;
+                            line-height: 1.3; 
+                        }
+                        .logo3 span {
+                            color: #ffffff;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .clearfix:after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+                .header_right{
+                    position: absolute;
+                    bottom: 2px;
+                    right: 15px;
+                    float: right;
+                    width: 50%;
+                    height: 82%;
+                    box-sizing: border-box;
+                    .gengo {
+                        float: right;
+                        width: 18%;
+                        height: 100%;
+                        box-sizing: border-box;
+                        margin-top: 9px;
+                        .gengo2 {
+                            height: 50%;
+                            padding: 1px;
+                            padding-bottom: 0px;
+                            text-align: center;
+                            box-sizing: border-box;
+                            a{
+                                color: #ffffff;
+                                text-decoration: none;
+                            }
+                            .gengo22 {
+                                border: solid 2px #ffffff;
+                                border-radius: 4px;
+                                background-color: #5e3f32;
+                                box-shadow: 1px 1px gray;
+                                a {
+                                    font-size: 13px;
+                                }
+                                span {
+                                    display: inline-block;
+                                    text-indent: -9999px;
+                                }
+                            }
+                            .gengo22:hover{
+                                cursor: pointer;
+                                background-color: #49352a;
+                                border: solid 2px #49352a;
+                            }
+                        }
+                    }
+                    .annai {
+                        float: right;
+                        width: 75%;
+                        height: 100%;
+                        box-sizing: border-box;
+                        margin-top: 10px;
+                    
+                        .annai2 {
+                            width: 32%;
+                            float: left;
+                            box-sizing: border-box;
+                            padding-left: 6px;
     
+                            .annai3 {
+                                padding: 6px;
+                                border-radius: 6px;
+                                background-color: #ffffff;
+                                box-shadow: 1px 1px gray;
+                                position: relative;
+                                margin-left: 2px;
+                                a {
+                                    position: absolute;
+                                    top: 0;
+                                    bottom: 0;
+                                    left: 0;
+                                    right: 0;
+                                    margin-left: 0;        
+                                }
+                                span {
+                                    display: block;
+                                    color: #000000;
+                                    text-decoration: none;
+                                    text-align: center;
+                                    font-size: 17px;        
+                                }
+                            }
+                            .annai3:hover {
+                                background-color:  #942a2a;
+                               span {
+                                    color: white;
+                                }
+                            }
+                            .nyukai {
+                                background-color: #942a2a;
+                                border: solid 2px #ffffff;
+                                padding: 4px;
+                                
+                                span {
+                                    color: #ffffff;
+                                }
+                            }
+                            .nyukai:hover {
+                                background-color: #ffffff;
+                                
+                                span {
+                                    color: #000000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // フッダー
     footer {
-        height: 120px;
+        height: 110px;
         background-color: #cccccc;
         width: 100%;
-    }
-    
-    .fjoudan {
-        position: relative;
-        height: 90px;
-        box-sizing: border-box;
-    }
-
-    // ヘッダー↓
-    .header_back_color {
-        border: solid 1px #c97e83;
-        background-color: #c97e83;
-        height: 120px;
-        box-sizing: border-box;
-        .mediataiou{
-            position: relative;
+        .mediataiou2 {
             width: 592px;
             margin-left: auto;
             margin-right: auto;
-            .header_logo {
+            .footer_nav {
+                height: 80px;
                 box-sizing: border-box;
-                width: 50%;
-                .logo {
-                    width: 225px;
-                    text-align: center;
-                    .logo1{
-                        margin-top: 15px;
-                        font-size: 14px;
-                        color: #49352a;
+                .links {
+                    width: 62%;
+                    float: left;
+                    ul {
+                        margin: 0;
+                        padding-top: 28px;
+                        list-style: none;
+                        display: flex;
+                        li {
+                            width: auto;
+                            border-right: solid 1px #696969;
+                            a {
+                                display: block;
+                                padding: 0 8px;
+                                color: #000000;
+                                font-size: 14px;
+                                text-decoration: none;
+                            }
+                            a:hover {
+                                background-color: #c97e83;
+                                color: #ffffff;
+                            }
+                        }
+                        li:last-child {
+                            border: none;
+                        }
                     }
-                    .logo2 a{
-                        color: #ffffff;
-                        font-size: 36px;
-                        text-decoration: none;
-                        line-height: 1.3; 
-                    }
-                    .logo3 span {
-                        color: #ffffff;
-                        font-size: 14px;
+                }
+                .sns{
+                    float: right;
+                    display: flex;
+                    margin-top: 15px;
+                    .sns2{
+                        margin-right: 24px;
+                        width: 50px;
+                        height: 50px;
+                        background-color: #ffffff;
+                        border-radius: 8px;
+                        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+                        .instagram a img{
+                            width: 49px;
+                            height: 49px;
+                        }
+                        .twitter a img {
+                            width: 50px;
+                            height: 50px;
+                        }
+                        .weibo {
+                            text-align: center;
+                            margin-top: 5px;
+                            a img {
+                                width: 37px;
+                                height: 39px;
+                            }
+                        }
                     }
                 }
             }
@@ -515,192 +737,13 @@ body {
                 display: block;
                 clear: both;
             }
-            .header_right{
-                position: absolute;
-                bottom: 2px;
-                right: 15px;
-                float: right;
-                width: 50%;
-                height: 82%;
-                box-sizing: border-box;
-                .gengo {
-                    float: right;
-                    width: 18%;
-                    height: 100%;
-                    box-sizing: border-box;
-                    margin-top: 9px;
-                    .gengo2 {
-                        height: 50%;
-                        padding: 1px;
-                        padding-bottom: 0px;
-                        text-align: center;
-                        box-sizing: border-box;
-                        a{
-                            color: #ffffff;
-                            text-decoration: none;
-                        }
-                        .gengo22 {
-                            border: solid 2px #ffffff;
-                            border-radius: 4px;
-                            background-color: #5e3f32;
-                            box-shadow: 1px 1px gray;
-                            a {
-                                font-size: 13px;
-                            }
-                            span {
-                                display: inline-block;
-                                text-indent: -9999px;
-                            }
-                        }
-                        .gengo22:hover{
-                            cursor: pointer;
-                            background-color: #49352a;
-                            border: solid 2px #49352a;
-                        }
-                    }
-                }
-                .annai {
-                    float: right;
-                    width: 75%;
-                    height: 100%;
-                    box-sizing: border-box;
-                    margin-top: 10px;
-                
-                    .annai2 {
-                        width: 32%;
-                        float: left;
-                        box-sizing: border-box;
-                        padding-left: 6px;
-
-                        .annai3 {
-                            padding: 6px;
-                            border-radius: 6px;
-                            background-color: #ffffff;
-                            box-shadow: 1px 1px gray;
-                            position: relative;
-                            margin-left: 2px;
-                            a {
-                                position: absolute;
-                                top: 0;
-                                bottom: 0;
-                                left: 0;
-                                right: 0;
-                                margin-left: 0;        
-                            }
-                            span {
-                                display: block;
-                                color: #000000;
-                                text-decoration: none;
-                                text-align: center;
-                                font-size: 17px;        
-                            }
-                        }
-                        .annai3:hover {
-                            background-color:  #942a2a;
-                           span {
-                                color: white;
-                            }
-                        }
-                        .nyukai {
-                            background-color: #942a2a;
-                            border: solid 2px #ffffff;
-                            padding: 4px;
-                            
-                            span {
-                                color: #ffffff;
-                            }
-                        }
-                        .nyukai:hover {
-                            background-color: #ffffff;
-                            
-                            span {
-                                color: #000000;
-                            }
-                        }
-                    }
-                }
-            }
+        }
+        .copyright {
+            height: 20px;
+            box-sizing: border-box;
+            text-align: center;
         }
     }
-
-    // フッダー↓
-    .links {
-        width: 50%;
-    }
-    
-    .links ul {
-        margin: 0;
-        padding: 18px 50px 13px 12px;
-        list-style: none;
-    }
-    
-    .links ul:after {
-        content: "";
-        display: block;
-        clear: both;
-    }
-    
-    .links li {
-        float: left;
-        width: auto;
-        border-right: solid 1px #696969;
-    }
-    
-    .links li a {
-        display: block;
-        padding: 0 13px;
-        color: #000000;
-        font-size: 14px;
-        text-decoration: none;
-    }
-    
-    .links li a:hover {
-        background-color: #c97e83;
-        color: #ffffff;
-        
-    }
-    
-    .sns{
-        position: absolute;
-        top: 15px;
-        right: 5px;       
-    }
-    
-    .sns2{
-        margin: 0 10px;
-        width: 50px;
-        height: 50px;
-        background-color: #ffffff;
-        float: right;
-        border-radius: 8px;
-        box-shadow: 1px 1px gray;
-    }
-    
-    .instagram a img {
-        width: 49px;
-        height: 49px;
-    }
-    
-    .twitter a img {
-        width: 50px;
-        height: 50px;
-    }
-    
-    .weibo {
-        padding: 3px;
-    }
-    
-    .weibo a img {
-        width: 44px;
-        height: 44px;
-    }
-    
-    .copyright {
-        height: 20px;
-        box-sizing: border-box;
-        text-align: center;
-    }
-    
 }    
 
 @media (min-width: 768px) and (max-width: 1019px) {
@@ -708,6 +751,7 @@ body {
         margin: 0;
         padding: 0;
     }
+    // ヘッダー↓
     header {
         margin: 0;
         padding: 0;
@@ -715,51 +759,214 @@ body {
         width: 100%;
         z-index: 2;
         box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+        .header_back_color {
+            border: solid 1px #c97e83;
+            background-color: #c97e83;
+            height: 120px;
+            box-sizing: border-box;
+            .mediataiou{
+                position: relative;
+                width: 760px;
+                margin-left: auto;
+                margin-right: auto;
+                .header_logo {
+                    box-sizing: border-box;
+                    width: 50%;
+                    .logo {
+                        width: 225px;
+                        text-align: center;
+                        .logo1{
+                            margin-top: 10px;
+                            font-size: 16px;
+                            color: #49352a;
+                        }
+                        .logo2 a{
+                            color: #ffffff;
+                            font-size: 38px;
+                            text-decoration: none;
+                            line-height: 1.3; 
+                        }
+                        .logo3 span {
+                            color: #ffffff;
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .clearfix:after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+                .header_right{
+                    position: absolute;
+                    bottom: 2px;
+                    right: 10px;
+                    float: right;
+                    width: 50%;
+                    height: 82%;
+                    box-sizing: border-box;
+                    .gengo {
+                        float: right;
+                        width: 21%;
+                        height: 100%;
+                        box-sizing: border-box;
+                        .gengo2 {
+                            height: 50%;
+                            padding: 10px;
+                            padding-bottom: 0px;
+                            text-align: center;
+                            box-sizing: border-box;
+                            a{
+                                color: #ffffff;
+                                text-decoration: none;
+                            }
+                            .gengo22 {
+                                border: solid 2px #ffffff;
+                                border-radius: 4px;
+                                background-color: #5e3f32;
+                                box-shadow: 1px 1px gray;
+                                .gengo22 a {
+                                    font-size: 13px;
+                                }
+                            }
+                            .gengo22:hover{
+                                cursor: pointer;
+                                background-color: #49352a;
+                                border: solid 2px #49352a;
+                            }
+                        }
+                    }
+                    .annai {
+                        float: right;
+                        width: 65%;
+                        height: 100%;
+                        box-sizing: border-box;
+                    
+                        .annai2 {
+                            width: 33.333%;
+                            padding: 5px 10px;
+                            float: left;
+                            box-sizing: border-box;
+                            .annai3 {
+                                padding: 10px;
+                                border-radius: 6px;
+                                background-color: #ffffff;
+                                box-shadow: 1px 1px gray;
+                                
+                                position: relative;
+                                a {
+                                    position: absolute;
+                                    top: 0;
+                                    bottom: 0;
+                                    left: 0;
+                                    right: 0;
+                                    margin-left: 0;        
+                                }
+                                span {
+                                    display: block;
+                                    color: #000000;
+                                    text-decoration: none;
+                                    text-align: center;
+                                    font-size: 17px;        
+                                }
+                            }
+                            .annai3:hover {
+                                background-color:  #942a2a;
+                               span {
+                                    color: white;
+                                }
+                            }
+                            .nyukai {
+                                background-color: #942a2a;
+                                border: solid 2px #ffffff;
+                                padding: 8px;
+                                
+                                span {
+                                    color: #ffffff;
+                                }
+                            }
+                            .nyukai:hover {
+                                background-color: #ffffff;
+                                
+                                span {
+                                    color: #000000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
     }
     
+    // フッダー
     footer {
         height: 120px;
         background-color: #cccccc;
         width: 100%;
-    }
-    
-    .fjoudan {
-        position: relative;
-        height: 90px;
-        box-sizing: border-box;
-    }
-
-    // ヘッダー↓
-    .header_back_color {
-        border: solid 1px #c97e83;
-        background-color: #c97e83;
-        height: 120px;
-        box-sizing: border-box;
-        .mediataiou{
-            position: relative;
+        .mediataiou2 {
             width: 760px;
             margin-left: auto;
             margin-right: auto;
-            .header_logo {
+            .footer_nav {
+                height: 90px;
                 box-sizing: border-box;
-                width: 50%;
-                .logo {
-                    width: 225px;
-                    text-align: center;
-                    .logo1{
-                        margin-top: 10px;
-                        font-size: 16px;
-                        color: #49352a;
+                .links {
+                    width: 60%;
+                    float: left;
+                    ul {
+                        margin: 0;
+                        padding: 26px;
+                        list-style: none;
+                        display: flex;
+                        li {
+                            width: auto;
+                            border-right: solid 1px #696969;
+                            a {
+                                display: block;
+                                padding: 0 13px;
+                                color: #000000;
+                                font-size: 16px;
+                                text-decoration: none;
+                            }
+                            a:hover {
+                                background-color: #c97e83;
+                                color: #ffffff;
+                            }
+                        }
+                        li:last-child {
+                            border: none;
+                        }
                     }
-                    .logo2 a{
-                        color: #ffffff;
-                        font-size: 38px;
-                        text-decoration: none;
-                        line-height: 1.3; 
-                    }
-                    .logo3 span {
-                        color: #ffffff;
-                        font-size: 16px;
+                }
+                .sns{
+                    float: right;
+                    display: flex;
+                    margin-top: 18px;
+                    .sns2{
+                        margin-right: 30px;
+                        width: 55px;
+                        height: 55px;
+                        background-color: #ffffff;
+                        border-radius: 8px;
+                        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+                        .instagram a img{
+                            width: 54px;
+                            height: 54px;
+                        }
+                        .twitter a img {
+                            width: 55px;
+                            height: 55px;
+                        }
+                        .weibo {
+                            text-align: center;
+                            margin-top: 5px;
+                            a img {
+                                width: 42px;
+                                height: 44px;
+                            }
+                        }
                     }
                 }
             }
@@ -768,183 +975,12 @@ body {
                 display: block;
                 clear: both;
             }
-            .header_right{
-                position: absolute;
-                bottom: 2px;
-                right: 10px;
-                float: right;
-                width: 50%;
-                height: 82%;
-                box-sizing: border-box;
-                .gengo {
-                    float: right;
-                    width: 21%;
-                    height: 100%;
-                    box-sizing: border-box;
-                    .gengo2 {
-                        height: 50%;
-                        padding: 10px;
-                        padding-bottom: 0px;
-                        text-align: center;
-                        box-sizing: border-box;
-                        a{
-                            color: #ffffff;
-                            text-decoration: none;
-                        }
-                        .gengo22 {
-                            border: solid 2px #ffffff;
-                            border-radius: 4px;
-                            background-color: #5e3f32;
-                            box-shadow: 1px 1px gray;
-                            .gengo22 a {
-                                font-size: 13px;
-                            }
-                        }
-                        .gengo22:hover{
-                            cursor: pointer;
-                            background-color: #49352a;
-                            border: solid 2px #49352a;
-                        }
-                    }
-                }
-                .annai {
-                    float: right;
-                    width: 65%;
-                    height: 100%;
-                    box-sizing: border-box;
-                
-                    .annai2 {
-                        width: 33.333%;
-                        padding: 5px 10px;
-                        float: left;
-                        box-sizing: border-box;
-                        .annai3 {
-                            padding: 10px;
-                            border-radius: 6px;
-                            background-color: #ffffff;
-                            box-shadow: 1px 1px gray;
-                            
-                            position: relative;
-                            a {
-                                position: absolute;
-                                top: 0;
-                                bottom: 0;
-                                left: 0;
-                                right: 0;
-                                margin-left: 0;        
-                            }
-                            span {
-                                display: block;
-                                color: #000000;
-                                text-decoration: none;
-                                text-align: center;
-                                font-size: 17px;        
-                            }
-                        }
-                        .annai3:hover {
-                            background-color:  #942a2a;
-                           span {
-                                color: white;
-                            }
-                        }
-                        .nyukai {
-                            background-color: #942a2a;
-                            border: solid 2px #ffffff;
-                            padding: 8px;
-                            
-                            span {
-                                color: #ffffff;
-                            }
-                        }
-                        .nyukai:hover {
-                            background-color: #ffffff;
-                            
-                            span {
-                                color: #000000;
-                            }
-                        }
-                    }
-                }
-            }
         }
-    }
-
-    // フッダー↓
-    .links {
-        width: 50%;
-    }
-    
-    .links ul {
-        margin: 0;
-        padding: 26px;
-        list-style: none;
-    }
-    
-    .links ul:after {
-        content: "";
-        display: block;
-        clear: both;
-    }
-    
-    .links li {
-        float: left;
-        width: auto;
-        border-right: solid 1px #696969;
-    }
-    
-    .links li a {
-        display: block;
-        padding: 0 13px;
-        color: #000000;
-        font-size: 14px;
-        text-decoration: none;
-    }
-    
-    .links li a:hover {
-        background-color: #c97e83;
-        color: #ffffff;
-        
-    }
-    
-    .sns{
-        position: absolute;
-        top: 20px;
-        right: 35px;        
-    }
-    
-    .sns2{
-        margin: 0 15px;
-        width: 50px;
-        height: 50px;
-        background-color: #ffffff;
-        float: right;
-        border-radius: 8px;
-        box-shadow: 1px 1px gray;
-    }
-    
-    .instagram a img {
-        width: 49px;
-        height: 49px;
-    }
-    
-    .twitter a img {
-        width: 50px;
-        height: 50px;
-    }
-    
-    .weibo {
-        padding: 3px;
-    }
-    
-    .weibo a img {
-        width: 44px;
-        height: 44px;
-    }
-    
-    .copyright {
-        height: 20px;
-        box-sizing: border-box;
-        text-align: center;
+        .copyright {
+            height: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
     }
 }
 
@@ -953,7 +989,8 @@ body {
         margin: 0;
         padding: 0;
     }
-    
+
+    // ヘッダー
     header {
         margin: 0;
         padding: 0;
@@ -961,55 +998,214 @@ body {
         position: fixed;
         width: 100%;
         z-index: 2;
+        .header_back_color {
+            border: solid 1px #c97e83;
+            background-color: #c97e83;
+            height: 120px;
+            box-sizing: border-box;
+            .mediataiou{
+                position: relative;
+                width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+            
+                .header_logo {
+                    box-sizing: border-box;
+                    width: 50%;
+                    .logo {
+                        width: 225px;
+                        text-align: center;
+                        .logo1{
+                            margin-top: 10px;
+                            font-size: 16px;
+                            color: #49352a;
+                        }
+                        .logo2 a{
+                            color: #ffffff;
+                            font-size: 38px;
+                            text-decoration: none;
+                            line-height: 1.3; 
+                        }
+                        .logo3 span {
+                            color: #ffffff;
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .clearfix:after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+                .header_right{
+                    position: absolute;
+                    bottom: 2px;
+                    right: 10px;
+                    float: right;
+                    width: 50%;
+                    height: 82%;
+                    box-sizing: border-box;
+                    .gengo {
+                        float: right;
+                        width: 18%;
+                        height: 100%;
+                        box-sizing: border-box;
+                        .gengo2 {
+                            height: 50%;
+                            padding: 10px;
+                            padding-bottom: 0px;
+                            text-align: center;
+                            box-sizing: border-box;
+                            a{
+                                color: #ffffff;
+                                text-decoration: none;
+                            }
+                            .gengo22 {
+                                border: solid 2px #ffffff;
+                                border-radius: 4px;
+                                background-color: #5e3f32;
+                                box-shadow: 1px 1px gray;
+                                .gengo22 a {
+                                    font-size: 13px;
+                                }
+                            }
+                            .gengo22:hover{
+                                cursor: pointer;
+                                background-color: #49352a;
+                                border: solid 2px #49352a;
+                            }
+                        }
+                    }
+                    .annai {
+                        float: right;
+                        width: 55%;
+                        height: 100%;
+                        box-sizing: border-box;
+                    
+                        .annai2 {
+                            width: 33.333%;
+                            padding: 5px 10px;
+                            float: left;
+                            box-sizing: border-box;
+                            .annai3 {
+                                padding: 10px;
+                                border-radius: 6px;
+                                background-color: #ffffff;
+                                box-shadow: 1px 1px gray;
+                                
+                                position: relative;
+                                a {
+                                    position: absolute;
+                                    top: 0;
+                                    bottom: 0;
+                                    left: 0;
+                                    right: 0;
+                                    margin-left: 0;        
+                                }
+                                span {
+                                    display: block;
+                                    color: #000000;
+                                    text-decoration: none;
+                                    text-align: center;
+                                    font-size: 17px;        
+                                }
+                            }
+                            .annai3:hover {
+                                background-color:  #942a2a;
+                               span {
+                                    color: white;
+                                }
+                            }
+                            .nyukai {
+                                background-color: #942a2a;
+                                border: solid 2px #ffffff;
+                                padding: 8px;
+                                
+                                span {
+                                    color: #ffffff;
+                                }
+                            }
+                            .nyukai:hover {
+                                background-color: #ffffff;
+                                
+                                span {
+                                    color: #000000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
     }
-    
+
+    // ここからフッダー
     footer {
         height: 120px;
         background-color: #cccccc;
         width: 100%;
-    }
-    
-    .fjoudan {
-        position: relative;
-        height: 90px;
-        box-sizing: border-box;
-    }
-
-    
-    // ここから上共通
-
-    // ヘッダー↓
-    .header_back_color {
-        border: solid 1px #c97e83;
-        background-color: #c97e83;
-        height: 120px;
-        box-sizing: border-box;
-        .mediataiou{
-            position: relative;
+        .mediataiou2 {
             width: 1000px;
             margin-left: auto;
             margin-right: auto;
-        
-            .header_logo {
+            .footer_nav {
+                height: 90px;
                 box-sizing: border-box;
-                width: 50%;
-                .logo {
-                    width: 225px;
-                    text-align: center;
-                    .logo1{
-                        margin-top: 10px;
-                        font-size: 16px;
-                        color: #49352a;
+                .links {
+                    width: 50%;
+                    float: left;
+                    ul {
+                        margin: 0;
+                        padding: 26px;
+                        list-style: none;
+                        display: flex;
+                        li {
+                            width: auto;
+                            border-right: solid 1px #696969;
+                            a {
+                                display: block;
+                                padding: 0 13px;
+                                color: #000000;
+                                font-size: 16px;
+                                text-decoration: none;
+                            }
+                            a:hover {
+                                background-color: #c97e83;
+                                color: #ffffff;
+                            }
+                        }
+                        li:last-child {
+                            border: none;
+                        }
                     }
-                    .logo2 a{
-                        color: #ffffff;
-                        font-size: 38px;
-                        text-decoration: none;
-                        line-height: 1.3; 
-                    }
-                    .logo3 span {
-                        color: #ffffff;
-                        font-size: 16px;
+                }
+                .sns{
+                    float: right;
+                    display: flex;
+                    margin-top: 18px;
+                    .sns2{
+                        margin: 0 15px;
+                        width: 60px;
+                        height: 60px;
+                        background-color: #ffffff;
+                        border-radius: 8px;
+                        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+                        .instagram a img{
+                            width: 59px;
+                            height: 59px;
+                        }
+                        .twitter a img {
+                            width: 60px;
+                            height: 60px;
+                        }
+                        .weibo {
+                            padding: 6px;
+                            a img {
+                                width: 48px;
+                                height: 48px;
+                            }
+                        }
                     }
                 }
             }
@@ -1018,181 +1214,12 @@ body {
                 display: block;
                 clear: both;
             }
-            .header_right{
-                position: absolute;
-                bottom: 2px;
-                right: 10px;
-                float: right;
-                width: 50%;
-                height: 82%;
-                box-sizing: border-box;
-                .gengo {
-                    float: right;
-                    width: 18%;
-                    height: 100%;
-                    box-sizing: border-box;
-                    .gengo2 {
-                        height: 50%;
-                        padding: 10px;
-                        padding-bottom: 0px;
-                        text-align: center;
-                        box-sizing: border-box;
-                        a{
-                            color: #ffffff;
-                            text-decoration: none;
-                        }
-                        .gengo22 {
-                            border: solid 2px #ffffff;
-                            border-radius: 4px;
-                            background-color: #5e3f32;
-                            box-shadow: 1px 1px gray;
-                            .gengo22 a {
-                                font-size: 13px;
-                            }
-                        }
-                        .gengo22:hover{
-                            cursor: pointer;
-                            background-color: #49352a;
-                            border: solid 2px #49352a;
-                        }
-                    }
-                }
-                .annai {
-                    float: right;
-                    width: 55%;
-                    height: 100%;
-                    box-sizing: border-box;
-                
-                    .annai2 {
-                        width: 33.333%;
-                        padding: 5px 10px;
-                        float: left;
-                        box-sizing: border-box;
-                        .annai3 {
-                            padding: 10px;
-                            border-radius: 6px;
-                            background-color: #ffffff;
-                            box-shadow: 1px 1px gray;
-                            
-                            position: relative;
-                            a {
-                                position: absolute;
-                                top: 0;
-                                bottom: 0;
-                                left: 0;
-                                right: 0;
-                                margin-left: 0;        
-                            }
-                            span {
-                                display: block;
-                                color: #000000;
-                                text-decoration: none;
-                                text-align: center;
-                                font-size: 17px;        
-                            }
-                        }
-                        .annai3:hover {
-                            background-color:  #942a2a;
-                           span {
-                                color: white;
-                            }
-                        }
-                        .nyukai {
-                            background-color: #942a2a;
-                            border: solid 2px #ffffff;
-                            padding: 8px;
-                            
-                            span {
-                                color: #ffffff;
-                            }
-                        }
-                        .nyukai:hover {
-                            background-color: #ffffff;
-                            
-                            span {
-                                color: #000000;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 
-    // ここからフッダー
-    .links {
-        width: 50%;
-    }
-    
-    .links ul {
-        margin: 0;
-        padding: 26px;
-        list-style: none;
-    }
-    
-    .links ul:after {
-        content: "";
-        display: block;
-        clear: both;
-    }
-    
-    .links li {
-        float: left;
-        width: auto;
-        border-right: solid 1px #696969;
-    }
-    
-    .links li a {
-        display: block;
-        padding: 0 13px;
-        color: #000000;
-        font-size: 16px;
-        text-decoration: none;
-    }
-    
-    .links li a:hover {
-        background-color: #c97e83;
-        color: #ffffff;
-    }
-    
-    .sns{
-        position: absolute;
-        top: 20px;
-        right: 35px;        
-    }
-    
-    .sns2{
-        margin: 0 15px;
-        width: 60px;
-        height: 60px;
-        background-color: #ffffff;
-        float: right;
-        border-radius: 8px;
-        box-shadow: 1px 1px gray;
-    }
-    
-    .instagram a img {
-        width: 59px;
-        height: 59px;
-    }
-    
-    .twitter a img {
-        width: 60px;
-        height: 60px;
-    }
-    
-    .weibo {
-        padding: 6px;
-    }
-    
-    .weibo a img {
-        width: 48px;
-        height: 48px;
-    }
-    
-    .copyright {
-        height: 20px;
-        box-sizing: border-box;
-        text-align: center;
+        }
+        .copyright {
+            height: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
     }
 }
