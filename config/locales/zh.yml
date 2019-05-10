@@ -1,0 +1,19 @@
+zh:
+    logo: "拍子木塾"
+    sublogo: "儿童中文教室"
+    yomi: "paizimu"
+    brochure1: "领取"
+    brochure2: "资料"
+    trial1: "免费"
+    trial2: "体验"
+    join1: "网上"
+    join2: "报名"
+    aboutus: "关于我们"
+    contact: "联系我们"
+    jobs: "人才招聘"
+    qa: "更多信息"
+    date:
+        order:
+        - :year
+        - :month
+        - :day

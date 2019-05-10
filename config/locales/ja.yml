@@ -1,0 +1,38 @@
+ja:
+    sublogo: "こども中国語教室"
+    logo: "拍子木塾"
+    yomi: "ひょうしぎじゅく"
+    brochure1: "資料"
+    brochure2: "請求"
+    trial1: "無料"
+    trial2: "体験"
+    join1: "入会"
+    join2: "申込"
+    aboutus: "会社案内"
+    contact: "お問合せ"
+    jobs: "採用情報"
+    qa: "よくある質問"
+    # models:
+    #     infomation: 請求情報
+    # attributes:
+    #     lastname: 「姓」
+    #     firstname: 「名」
+    #     lastnamekana: 「姓（カナ）」
+    #     firstnamekana: 「名（カナ）」
+    #     email: 「メールアドレス」
+    #     email_confirmation: 「メールアドレス（確認用）」
+    #     address: 「住所」
+    #     phonenumber1: 「電話番号」
+    #     phonenumber2: 「電話番号2」
+    #     phonenumber3: 「電話番号3」
+    #     age: 「年齢」
+    #     date: 「希望日」
+    #     content: 「お問合せ内容」
+    #     p_lastname: 「（保護者）姓」
+    #     p_firstname: 「（保護者）名」
+    #     p_lastnamekana: 「（保護者）セイ」
+    #     p_firstnamekana: 「（保護者）メイ」
+    #     birthday: 「生年月日」
+    #     gender: 「性別」
+    #     course: 「コース」
+    #     joindate: 「希望開始月」

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-    # scope '(:locale)', locale: /#{I18n.available_locales.map(&:to_s).join('|')}/ do
+   scope '(:locale)', locale: /#{I18n.available_locales.map(&:to_s).join('|')}/ do
     # # ↑ウェブサイトにアクセスした際に、言語コードをパスに含めるようルーティングを設定します。
         root 'hyoshigi#index'
         # トップページのルーティング
@@ -38,5 +38,5 @@ Rails.application.routes.draw do
     #     get 'entry' => 'entry#new'
     #     post 'entry' => 'entry#create'
     #     post 'entry/confirm' => 'entry#confirm'
-    # end
+    end
 end

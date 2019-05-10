@@ -4,11 +4,15 @@
     <title>拍子木塾</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <!--<2%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>-->
+    <%= stylesheet_link_tag 'application', media: 'all' %>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--↓google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru|Ubuntu+Condensed|ZCOOL+XiaoWei" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Kosugi+Maru|Ubuntu+Condensed|ZCOOL+XiaoWei" rel="stylesheet">-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Kosugi+Maru|Ubuntu+Condensed|ZCOOL+Noto+Sans+SC" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru|Noto+Sans+JP|Noto+Sans+SC" rel="stylesheet">
+
     
     <!--Import materialize.css-->
     <!--<link type="text/css" rel="stylesheet" href="/homepage/app/assets/stylesheets/materialize.css"  media="screen,projection"/>-->
@@ -18,11 +22,11 @@
 
     <!--↓jquery-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!--<2%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>-->
+    <%= javascript_include_tag 'application' %>
   </head>
 
-  <body>
-
+  <body class="<%= I18n.locale %>">
       <header>
         <div class="header_back_color">
             <div class="mediataiou">
@@ -30,16 +34,13 @@
                 <div class="header_logo">
                   <div class = "logo">
                     <div class = "logo1">
-                      <span>こども中国語教室</span>
-                      <!--<span><2%= I18n.t "sublogo" %></span>-->
+                      <span><%= I18n.t "sublogo" %></span>
                     </div>
                     <div class="logo2">
-                      <span ><a href="/">拍子木塾</a></span>
-                      <!--<span><a href="/"><2%= I18n.t "logo" %></a></span>-->
+                      <span><a href="/"><%= I18n.t "logo" %></a></span>
                     </div>
                     <div class = "logo3">
-                      <span>ひょうしぎじゅく</span>
-                      <!--<span><2%= I18n.t "yomi" %></span>-->
+                      <span><%= I18n.t "yomi" %></span>
                     </div>
                   </div>
                 </div>  
@@ -49,16 +50,35 @@
                     <!--↓言語切り替え部分-->
                     <div class="gengo">
                         <div class="gengo2">
-                          <div class="gengo22">
-                            <a>中文</a>
-                            <!--<2%= link_to('中文', i18n_url_for(params.merge(locale: :zh))) %>-->
+                            <div class="gengo22">
+                                <% if I18n.locale.to_s == "ja" %>
+                                    <%= link_to('中文', :locale => 'zh') %>
+                                <% elsif I18n.locale.to_s == "zh" %>
+                                    <%= link_to('日本語', :locale => 'ja') %>
+                                <% elsif I18n.locale.to_s == "en" %>
+                                    <%= link_to('日本語', :locale => 'ja') %>
+                                <% else %>
+                                    <%= link_to('中文', :locale => 'zh') %>
+                                <% end %>
                           </div>
                         </div>
                         <div class="gengo2">
                           <div class="gengo22">
-                            <!--<2%= link_to(i18n_url_for(params.merge(locale: :en))) do %>-->
-                            <a>En<span>lish</span></a> 
-                            <!--<2% end %>-->
+                                <% if I18n.locale.to_s == "ja" %>
+                                    <%= link_to(:locale => 'en') do %>
+                                        En<span>lish</span>
+                                    <% end %>
+                                <% elsif I18n.locale.to_s == "zh" %>
+                                    <%= link_to(:locale => 'en') do %>
+                                        En<span>lish</span>
+                                    <% end %>
+                                <% elsif I18n.locale.to_s == "en" %>
+                                    <%= link_to('中文', :locale => 'zh') %>
+                                <% else %>
+                                    <%= link_to(:locale => 'en') do %>
+                                        En<span>lish</span>
+                                    <% end %>
+                                <% end %>
                           </div>
                         </div>
                     </div>
@@ -66,20 +86,20 @@
                     <div class="annai">
                         <div class="annai2">
                             <div class="annai3">
-                                <a href="/information"></a>
-                                <span>資料<br>請求</span>
+                                <a href="/<%= I18n.locale %>/information"></a>
+                                <span><%= I18n.t "brochure1" %><br><%= I18n.t "brochure2" %></span>
                             </div>
                         </div>
                         <div class="annai2">
                             <div class="annai3">
-                                <a href="/trial"></a>
-                                <span>無料<br>体験</span>
+                                <a href="/<%= I18n.locale %>/trial"></a>
+                                <span><%= I18n.t "trial1" %><br><%= I18n.t "trial2" %></span>
                             </div>
                         </div>
                         <div class="annai2">
                             <div class="annai3 nyukai">
-                                <a href="/entry"></a>
-                                <span>入会<br>申込</span>              
+                                <a href="/<%= I18n.locale %>/entry"></a>
+                                <span><%= I18n.t "join1" %><br><%= I18n.t "join2" %></span>
                             </div>
                         </div>
                     </div>
@@ -95,10 +115,10 @@
     <div class="footer_nav clearfix">
       <div class="links">
         <ul>
-            <li><a href="/hyoshigis/aboutus">会社案内</a></li>
-            <li><a href="/inquiry">お問合せ</a></li>
-            <li><a href="/hyoshigis/recruit">採用情報</a></li>
-            <li><a href="/hyoshigis/more">よくある質問</a></li>
+            <li><a href="/<%= I18n.locale %>/hyoshigis/aboutus"><%= I18n.t "aboutus" %></a></li>
+            <li><a href="/<%= I18n.locale %>/inquiry"><%= I18n.t "contact" %></a></li>
+            <li><a href="/<%= I18n.locale %>/hyoshigis/recruit"><%= I18n.t "jobs" %></a></li>
+            <li><a href="/<%= I18n.locale %>/hyoshigis/more"><%= I18n.t "qa" %></a></li>
         </ul>
       </div>
       <div class="sns">

@@ -30,4 +30,16 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  sublogo: "Learning Chinese"
+  logo: "HYOSHIGI"
+  yomi: "kids language school"
+  brochure1: "Bro-"
+  brochure2: "chure"
+  trial1: "Free"
+  trial2: "Trial"
+  join1: "Appli-"
+  join2: "cation"
+  aboutus: "About Us"
+  contact: "Contact Us"
+  jobs: "Jobs"
+  qa: "Frequent Q&A"
