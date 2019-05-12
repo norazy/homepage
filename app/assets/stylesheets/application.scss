@@ -38,6 +38,9 @@ body {
         padding: 0;
         width: 100%;
         box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+        // ↓box-shadowを効かせるためにつけたもの
+        position: relative;
+        z-index: 2;
         .header_back_color {
             border: solid 1px #c97e83;
             background-color: #c97e83;
@@ -290,6 +293,9 @@ body {
         padding: 0;
         width: 100%;
         box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+        // ↓box-shadowを効かせるためにつけたもの
+        position: relative;
+        z-index: 2;
         .header_back_color {
             border: solid 1px #c97e83;
             background-color: #c97e83;
